@@ -23,6 +23,26 @@ def uncovered_code():
     print('This code is not covered.')
 
 
+def this_is_also_uncovered_code():
+    """This does nothing useful."""
+    print('1')
+    print('2')
+    for i in range(10):
+        print(i)
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
+
+
 @transaction.non_atomic_requests
 class Health(APIView):
     """Allows a load balancer to verify this service is up.
